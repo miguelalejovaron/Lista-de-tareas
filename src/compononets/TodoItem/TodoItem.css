@@ -1,0 +1,37 @@
+.items-styles {
+    list-style: none;
+    border: 2px dotted black;
+    margin-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-weight: bolder;
+}
+.TodoItem-p{
+    margin: 24px 0 24px 24px;
+    /* width: calc(100% - 120px); */
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.TodoItem-p--complete {
+    text-decoration: line-through;
+  }
+  
+  .Icon {
+    cursor: pointer;
+    display: flex;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .Icon-check--active {
+    color: white;
+  }
+  .Icon-check:hover {
+    color: white;
+  }
+  
+  .Icon-delete:hover {
+    color: white;
+  }

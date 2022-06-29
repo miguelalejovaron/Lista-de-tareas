@@ -1,0 +1,22 @@
+.add-button-on-the-list {
+    background-color: white;
+    border: 3px dotted black;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 50px;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    width: 64px;
+    transform: rotate(0);
+    transition: .3s ease;
+}
+.add-button-on-the-list:hover {
+    transform: rotate(224deg);
+}
