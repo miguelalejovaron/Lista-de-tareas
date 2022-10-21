@@ -1,19 +1,13 @@
 import React from 'react';
-import "./CreateTodoButton.css"
+import { CardModal } from '../../CardModal/CardModal';
+
+
 
 const CreateTodoButton = () => {
-	const onClickButton = (msg) => {
-		alert(msg);
-	}
-	return (
 
-		<div>
-			<button 
-			className='add-button-on-the-list'
-			onClick={() => onClickButton("Hola desde alert")}
-			>
-				+
-			</button>
+	return (
+		<div className='todo-button'>
+			< CardModal/>
 		</div>
 	);
 };

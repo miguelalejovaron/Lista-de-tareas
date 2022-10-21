@@ -1,5 +1,9 @@
 .title {
+    margin-top: 1em;
     font-family: 'Koulen';
     font-size: 2.5em;
     color: white;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1em;
 }

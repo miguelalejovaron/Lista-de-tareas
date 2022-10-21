@@ -1,5 +1,4 @@
 import React from 'react';
-
 function useLocalStorage(itemName, initialValue) {
 	const [ error, setError ] = React.useState(false);
 	const [ loading, setLoading ] = React.useState(true);
@@ -23,7 +22,7 @@ function useLocalStorage(itemName, initialValue) {
 			} catch (error) {
 				setError(error);
 			}
-		}, 1000);
+		}, 2000);
 	});
 	const saveItem = (newItem) => {
 		try {

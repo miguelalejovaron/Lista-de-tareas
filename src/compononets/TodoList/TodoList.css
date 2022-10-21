@@ -1,0 +1,8 @@
+@media only screen and (max-width: 425px){
+    .container-list-items{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+    }
+}

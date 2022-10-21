@@ -1,11 +1,13 @@
+.form-control{
+    border: 2px solid #302b63;
+
+}
 .input-form{
     height: 2em;
     border: 2px solid black;
     margin-bottom: 1.5em;
     font-family: 'Oswald', sans-serif;
     font-size: 15px;
-    background-color: #FFE53B;
-    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
 
 }
 .input-form::placeholder {

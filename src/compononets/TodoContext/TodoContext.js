@@ -1,5 +1,9 @@
 import React from 'react';
 import { useLocalStorage } from './useLocalStorage';
+//Toastify react js
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 //Sweet alert library
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
@@ -30,9 +34,26 @@ function TodoProvider(props) {
 		});
 	}
 
+	const addTodo = (text) => {
+		const newTodos = [ ...todos ];
+		newTodos.push({
+			completed: false,
+			text,
+		});
+		toast('Your to do has been sucessfully saved', {
+			position: "bottom-right",
+			autoClose: 5000,
+			hideProgressBar: false,
+			closeOnClick: true,
+			pauseOnHover: true,
+			draggable: true,
+			progress: undefined,
+			});
+		saveTodos(newTodos);
+	};
 	const completeTodo = (text) => {
 		MySwal.fire({
-			title: <p>Haz terminado tu tarea 🥳</p>,
+			title: <p> You've finished your Task. 🥳</p>,
 			confirmButtonText: <p>Maravilloso</p>
 		});
 		const todoIndex = todos.findIndex((todo) => todo.text === text);
@@ -42,7 +63,7 @@ function TodoProvider(props) {
 	};
 	const deletedTodo = (text) => {
 		MySwal.fire({
-			title: <p>Acabas de borrar tu tarea 😞</p>,
+			title: <h2>You've deleted your Task. </h2>,
 			confirmButtonText: <p>Ok</p>
 		});
 		const todoIndex = todos.findIndex((todo) => todo.text === text);
@@ -57,6 +78,7 @@ function TodoProvider(props) {
 					error,
 					totalTodos,
 					completedTodos,
+					addTodo,
 					searchValue,
 					setSearchValue,
 					searchedTodos,

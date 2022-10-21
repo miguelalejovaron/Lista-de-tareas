@@ -1,5 +1,67 @@
-.cardMyBox {
+.todo-form-modal__container--position {
+    position: fixed;
     display: flex;
+    align-items:  flex-end;
+    justify-content: end;
+    right: 5px;
+    margin-right: 1em;
+    height: 50vh;
+    width: 91vw;
+
+
+}
+.modal-trigger__button--position {
+    margin-right: 1.5em;
+    position: fixed;
+    background-color: transparent;
+    border: none;
+}
+.modal-content {
     justify-content: center;
     align-items: center;
+}
+.modal__container--flex{
+    display: flex;
+}
+.item-add-span {
+    font-size: 70px;
+    color: white;
+    border: 3px dotted black;
+    border-radius: 50px;
+}
+.modal-button__trigger--color-styles{
+    color: black;
+    background-color: transparent;
+    border: none ;
+}
+.modal__body--styles {
+    display: flex;
+    justify-content: center;
+    height: 10em;
+}
+.modal__textarea--styles {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (max-width: 769px){
+    .modal-button__trigger--color-styles{
+        margin-right: 0.4em;
+    }
+    .item-add-span {
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width: 425px){
+    .modal-button__trigger--color-styles{
+        margin-right: 0.4em;
+    }
+    .todo-form-modal__container--position {
+        margin-right: 1px;
+        right: 5px;
+
+    }
+    .item-add-span {
+        font-size: 22px;
+    }
 }

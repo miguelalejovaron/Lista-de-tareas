@@ -1,37 +1,72 @@
+
 .items-styles {
-    list-style: none;
-    border: 2px dotted black;
-    margin-bottom: 2em;
-    padding-left: 1em;
-    padding-right: 1em;
-    font-weight: bolder;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  list-style: none;
+  border: 2px dotted #302b63;
+  margin-bottom: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  font-weight: bolder;
 }
-.TodoItem-p{
-    margin: 24px 0 24px 24px;
-    /* width: calc(100% - 120px); */
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 400;
+
+.TodoItem-p {
+  margin: 24px 0 24px 24px;
+  font-size: 25px;
+  line-height: 24px;
+  font-weight: 700;
+  color: white;
 }
+
 .TodoItem-p--complete {
-    text-decoration: line-through;
+  text-decoration: line-through;
+  color: white;
+  font-weight: 700;
+}
+
+.Icon {
+  cursor: pointer;
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.Icon-check--active {
+  color: white;
+}
+
+.Icon-check:hover {
+  color: white;
+}
+
+.Icon-delete:hover {
+  color: white;
+}
+
+
+@media only screen and (max-width: 425px) {
+  .items-styles {
+    width: 70vw;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 1em;
   }
-  
+  .TodoItem-p {
+    margin: 10px 0 10px 10px;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    color: white;
+    position:relative;
+  }
   .Icon {
     cursor: pointer;
     display: flex;
     font-size: 24px;
     font-weight: bold;
-    color: black;
-  }
-  
-  .Icon-check--active {
     color: white;
   }
-  .Icon-check:hover {
-    color: white;
-  }
-  
-  .Icon-delete:hover {
-    color: white;
-  }
+}

@@ -12,12 +12,11 @@ function TodoSearch() {
 
 	return (
 		<div>
-			<InputGroup size="lg" onChange={onSearchValueChange} value={searchValue}>
-				<InputGroup.Text id="inputGroup-sizing-lg" />
+			<InputGroup className='input__container--width-style' size="default" onChange={onSearchValueChange} value={searchValue}>
 				<FormControl
 					aria-label="Large"
 					aria-describedby="inputGroup-sizing-sm"
-					placeholder="Cebolla"
+					placeholder="Write to look an specefic To do here."
 					className="input-form"
 					
 				/>

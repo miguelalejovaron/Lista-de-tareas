@@ -1,0 +1,75 @@
+.my-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 98vw;
+    height: 80vh;
+}
+
+.main-card__container--flex {
+    width: 75vw;
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.My-ui-box-app--characteristics {
+    border: 2px dotted black;
+    margin-top: 2em;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+    backdrop-filter: blur(116px);
+    border-radius: 20px;
+    width: 75vw;
+    -webkit-box-shadow: 2px 2px 10px 9px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: 2px 2px 10px 9px rgba(0, 0, 0, 0.27);
+    box-shadow: 2px 2px 10px 9px rgba(0, 0, 0, 0.27);
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.empty-advice__title--font-styles {
+    color: white;
+    font-weight: 700;
+}
+
+.card {
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.item-list__container--flex-size {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: center;
+    align-items: center;
+    padding-left: 2em;
+    padding-right: 4em;
+    margin-top: 1em;
+}
+
+.loading__spinner--color {
+    color: white;
+}
+
+.loading__title--font-size {
+    font-weight: 700;
+    font-size: 35px;
+}
+
+@media only screen and (max-width: 425px) {
+    .my-app {
+        width: 98vw;
+        height: 80vh;
+    }
+    .My-ui-box-app--characteristics {
+        width: 78vw;
+        height: auto;
+    }
+}
