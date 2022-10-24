@@ -29,22 +29,28 @@ function AppUI() {
 					<TodoList>
 						{error404 && <p>Something is wrong </p>}
 						{loading && (
-							<p className="text-center loading__title--font-size">
-								Loading Your To Do's <Spinner animation="border" className="loading__spinner--color" />
-							</p>
+							<div>
+								<h5 className="text-center loading__title--font-size">
+									Loading Your To Do's 
+								</h5>
+								<Spinner animation="border" className="loading__spinner--color" />
+							</div>
 						)}
 						{!loading &&
 						!searchedTodos.length && (
-							<h2 className="empty-advice__title--font-styles text-center">CREATE YOUR FIRST TO DO</h2>
+							<div>
+								<h2 className="empty-advice__title--font-styles text-center">CREATE YOUR FIRST TO DO</h2>
+							</div>
 						)}
 						{searchedTodos.map((todo) => (
-							<ul className="item-list__container--flex-size">
+							<ul key={todo.text} className="item-list__container--flex-size">
 								<TodoItem
 									key={todo.text}
 									text={todo.text}
 									completed={todo.completed}
 									onComplete={() => completeTodo(todo.text)}
 									onDeleted={() => deletedTodo(todo.text)}
+									Todo={todo}
 								/>
 							</ul>
 						))}

@@ -7,8 +7,9 @@ import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 import { faDeleteLeft } from '@fortawesome/free-solid-svg-icons';
 
 const TodoItem = (props) => {
+
 	return (
-		<li className="items-styles">
+		<li key={props.text} className="items-styles">
 			<span>
 				<FontAwesomeIcon className="Icon Icon-delete" icon={faDeleteLeft} onClick={props.onDeleted} />
 			</span>
