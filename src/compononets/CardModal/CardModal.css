@@ -53,12 +53,11 @@
     }
 }
 @media only screen and (max-width: 425px){
-    .modal-button__trigger--color-styles{
-        margin-right: 0.4em;
-    }
+/*     .modal-button__trigger--color-styles{
+        
+    } */
     .todo-form-modal__container--position {
-        margin-right: 1px;
-        right: 5px;
+        right: -20px;
 
     }
     .item-add-span {

@@ -53,7 +53,7 @@ function CardModal() {
 					<Modal.Body className="modal__body--styles">
 						<label />
 						<textarea
-							placeholder="Cortar la cebolla para el almuerzo"
+							placeholder="Cook the dinner."
 							value={newTodoValue}
 							onChange={onChange}
 							className="modal__textarea--styles"
